@@ -59,12 +59,48 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    asdf
+    
 
     <div class="container">
       <!-- Example row of columns -->
 
-       asdf
+      <h1>About the Project (see the <a href="https://devpost.com/software/surf-predictive-browsing-plugin" style="color:#E4B6EA">devpost</a>)</h1>
+
+      <h2>Inspiration</h2>
+      <h2>What it does</h2>
+      <p>Surf is a Chrome extension that intelligently suggests sites a user may want to visit based on browsing activity, such as browsing history, mouse movements, and user habits. At the top right of each site, users will see an unobtrusive list of suggestions for that site. By mousing over this bar at the top right, users will see an expanded list from which they can select their next destination</p>
+
+      <p>Surf also has a companion Android app that allows users to look at their browsing habits.</p>
+
+      <h2>How we built it</h2>
+      The extension collects various metadata and uses a PageRank-style algorithm to determine a list of suggestions for each website a user visits, and this list changes dynamically as users continue to browse. It syncs this data to a Firebase database, which the companion app reads from.
+
+      <h2>Challenges we ran into</h2>
+      <ul>
+        <li>• Generating/collecting test data to assist in modifying the algorithm was time-consuming</li>
+        <li>• Hooking up the extension and app to Firebase complicated things considerably</li>
+      </ul>
+
+      <h2>Accomplishments that we're proud of</h2>
+      The extension is sleek and genuinely useful, and the android app provides interesting insights into user browsing habits.
+
+      <h2>What we learned</h2>
+      Building and testing something that's meant to handle lots of data is difficult to do quickly, and adding users and databases complicates things even more.
+
+      <h2>What's next for Surf - Predictive Browsing Plugin</h2>
+      <ul>
+        <li>• Enhance algorithm by training a machine learning classifier (we need to collect more real data)</li>
+        <li>• iOS companion app, Firefox/Safari/etc. extensions</li>
+        <li>• More sophisticated user handling/login system</li>
+        <li>• End-to-end encryption of user data, so we can't spy on users</li>
+      </ul>
+      <h2>Github</h2>
+      <ul>
+        <li>• <a href="https://github.com/parkjs814/surf-chrome-plugin" style="color:#E4B6EA">Extension</a></li>
+        <li>• <a href="https://github.com/FuadYoussef/surf-android" style="color:#E4B6EA">App</a></li>
+        <li>• <a href="https://github.com/surf-plugin/surf-plugin.github.io" style="color:#E4B6EA">Website</a></li>
+      </ul>
+
 
       <hr>
       <footer>
