@@ -167,3 +167,17 @@ ul.nav a:focus { background-color: #009497 !important; }
 ul.nav a:active { background-color: #009497 !important; }
 .icon-bar { background-color: white !important; }
 .active { background-color: #009497 !important; }
+.btn:hover { color: white !important }
+.btn:focus { color: white !important }
+.btn:active { color: white !important }
+
+body, .jumbotron {
+  background-color: #98B7D8;
+  color: white;
+  text-shadow: 2px 2px #7A92AD;
+}
+
+
+
+
+
