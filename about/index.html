@@ -67,34 +67,36 @@
       <h1>About the Project (see the <a href="https://devpost.com/software/surf-predictive-browsing-plugin" style="color:#E4B6EA">devpost</a>)</h1>
 
       <h2>Inspiration</h2>
-      When thinking about how to use big data for good, we came up with the concept for Surf in order to help users understand their browsing habits and even make some common tasks quicker and easier.
-      
-      <h2>What it does</h2>
-      <p>Surf is a Chrome extension that intelligently suggests sites a user may want to visit based on browsing activity, such as browsing history, mouse movements, and user habits. At the top right of each site, users will see an unobtrusive list of suggestions for that site. By mousing over this bar at the top right, users will see an expanded list from which they can select their next destination</p>
+      When thinking about how to use big data for good, we came up with the concept for Surf in order to help users understand their browsing habits and patterns as well as make some common tasks quicker and easier.
 
-      <p>Surf also has a companion Android app that allows users to look at their browsing habits.</p>
+      <h2>What it does</h2>
+      <p>Surf is a Chrome extension that intelligently suggests sites a user may want to visit based on browsing activity, such as browsing history, mouse movements, and user habits. At the top right of each site, users will see an unobtrusive list of suggestions for that site that displays actions that they would normally take. By mousing over this bar at the top right, users will see an expanded list from which they can select their next destination. Finally, users have access to an analytics page, which includes a visualization of their usage patterns.</p>
+
+      <p>Surf also has a companion Android app that allows users to look at their browsing habits as well as access their most used links. The app receives the user data live from the server and displays the current link and a set of suggested pages so that a user can quickly pickup their browsing on their phone. The app also helps provide a better visualization of what a user's web browsing patterns look like at any given link.</p>
 
       <h2>How we built it</h2>
-      The extension collects various metadata and uses a PageRank-style algorithm to determine a list of suggestions for each website a user visits, and this list changes dynamically as users continue to browse. It syncs this data to a Firebase database, which the companion app reads from.
+     The extension collects various metadata such as browser history and mouse activity and uses a PageRank-style algorithm to determine a list of suggestions for each website a user visits, and this list changes dynamically as users continue to browse. It syncs this data to a Firebase database, which the companion app reads from. The companion app then translates the data stored onto the server into multiple different components such as webpage title and favicon to present the user with readable data. This data then goes through an adapter we created that compiles this data into cards that are displayed on the screen.
 
       <h2>Challenges we ran into</h2>
       <ul>
+        <li>• We had to build an algorithm in order to calculate suggestions</li>
         <li>• Generating/collecting test data to assist in modifying the algorithm was time-consuming</li>
-        <li>• Hooking up the extension and app to Firebase complicated things considerably</li>
+        <li>• Adding this data to a server took more time than initially planned</li>
+        <li>• Hooking up the extension and app to Firebase complicated things considerably </li>
       </ul>
 
       <h2>Accomplishments that we're proud of</h2>
-      The extension is sleek and genuinely useful, and the android app provides interesting insights into user browsing habits.
+      The extension is sleek and genuinely useful, and the Android app provides interesting insights into user browsing habits. The app also reads live from a server, and therefore can be used to expand a user's experience.
 
       <h2>What we learned</h2>
-      Building and testing something that's meant to handle lots of data is difficult to do quickly, and adding users and databases complicates things even more.
+      Building and testing something that's meant to handle lots of data is difficult to do quickly, and adding users and databases complicates things even more. Integrating components of the project written in different programming languages also required a significant amount of extra parsing to connect them.
 
       <h2>What's next for Surf - Predictive Browsing Plugin</h2>
       <ul>
         <li>• Enhance algorithm by training a machine learning classifier (we need to collect more real data)</li>
         <li>• iOS companion app, Firefox/Safari/etc. extensions</li>
         <li>• More sophisticated user handling/login system</li>
-        <li>• End-to-end encryption of user data, so we can't spy on users</li>
+        <li>• End-to-end encryption of user data</li>
       </ul>
       <h2>Github</h2>
       <ul>
