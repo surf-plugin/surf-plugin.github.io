@@ -177,7 +177,11 @@ body, .jumbotron {
   text-shadow: 2px 2px #7A92AD;
 }
 
+.card, .card-body {
+  background-color: #A1C2E5 !important;
+}
 
 
-
-
+::selection {
+  background: #EFB843; /* WebKit/Blink Browsers */
+}
